@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Services View Controller-->
+        <scene sceneID="Tcy-VE-eQS">
+            <objects>
+                <viewController storyboardIdentifier="ServicesStoryboard" id="pnB-b1-DR2" customClass="ServicesViewController" customModule="BIB_Individuals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lUn-Od-i8R">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lable" translatesAutoresizingMaskIntoConstraints="NO" id="0Wz-uc-NRr">
+                                <rect key="frame" x="20" y="20" width="374" height="60"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="F1C-ca-FnV">
+                                <rect key="frame" x="53.5" y="100" width="307" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digital Insurence App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lk9-f7-U1Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="307" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" name="grayText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now You Can Get Online Questions For" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrS-wh-GdY">
+                                        <rect key="frame" x="0.0" y="40.5" width="307" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" name="grayText"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pat-I0-Y8r">
+                                <rect key="frame" x="20" y="201" width="374" height="160"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0fx-Sa-Kbo">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="160"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEu-1o-qIZ" customClass="TappedView" customModule="BIB_Individuals" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="160"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="service3" translatesAutoresizingMaskIntoConstraints="NO" id="Drv-5v-N7O">
+                                                        <rect key="frame" x="9" y="10" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="1kw-L5-zQ1"/>
+                                                            <constraint firstAttribute="width" constant="100" id="sCo-iI-bYk"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehical Insurence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqg-js-2d3">
+                                                        <rect key="frame" x="4.5" y="120" width="109.5" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                        <color key="textColor" name="grayText"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="nqg-js-2d3" secondAttribute="bottom" constant="10" id="Okb-tT-B8m"/>
+                                                    <constraint firstItem="nqg-js-2d3" firstAttribute="centerX" secondItem="EEu-1o-qIZ" secondAttribute="centerX" id="Zkm-6p-Ca6"/>
+                                                    <constraint firstItem="Drv-5v-N7O" firstAttribute="top" secondItem="EEu-1o-qIZ" secondAttribute="top" constant="10" id="nag-j6-dYv"/>
+                                                    <constraint firstItem="nqg-js-2d3" firstAttribute="top" secondItem="Drv-5v-N7O" secondAttribute="bottom" constant="10" id="oL9-IK-b2a"/>
+                                                    <constraint firstItem="Drv-5v-N7O" firstAttribute="centerX" secondItem="EEu-1o-qIZ" secondAttribute="centerX" id="ttX-28-Yu5"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXx-4y-6x8" customClass="TappedView" customModule="BIB_Individuals" customModuleProvider="target">
+                                                <rect key="frame" x="128" y="0.0" width="118" height="160"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="service1" translatesAutoresizingMaskIntoConstraints="NO" id="ac9-v0-hyc">
+                                                        <rect key="frame" x="9" y="10" width="100" height="100"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="1vh-0M-Hyq"/>
+                                                            <constraint firstAttribute="width" constant="100" id="DGi-vV-TzQ"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="travel Insurence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbC-v3-9hN">
+                                                        <rect key="frame" x="9.5" y="120" width="99.5" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                        <color key="textColor" name="grayText"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="vbC-v3-9hN" secondAttribute="bottom" constant="10" id="WIf-12-xIE"/>
+                                                    <constraint firstItem="ac9-v0-hyc" firstAttribute="centerX" secondItem="KXx-4y-6x8" secondAttribute="centerX" id="mWp-QM-sZQ"/>
+                                                    <constraint firstItem="vbC-v3-9hN" firstAttribute="centerX" secondItem="KXx-4y-6x8" secondAttribute="centerX" id="n6t-uE-zVI"/>
+                                                    <constraint firstItem="ac9-v0-hyc" firstAttribute="top" secondItem="KXx-4y-6x8" secondAttribute="top" constant="10" id="wBt-8a-N6L"/>
+                                                    <constraint firstItem="vbC-v3-9hN" firstAttribute="top" secondItem="ac9-v0-hyc" secondAttribute="bottom" constant="10" id="znf-a1-DVS"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qyh-ZV-xQA" customClass="TappedView" customModule="BIB_Individuals" customModuleProvider="target">
+                                                <rect key="frame" x="256" y="0.0" width="118" height="160"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" image="service2" translatesAutoresizingMaskIntoConstraints="NO" id="L6q-JV-F3e">
+                                                        <rect key="frame" x="9" y="10" width="100" height="100"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="70e-5m-6JZ"/>
+                                                            <constraint firstAttribute="width" constant="100" id="QKv-gM-gM1"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medical Insurence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMt-VY-aOa">
+                                                        <rect key="frame" x="2.5" y="120" width="113" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="rT2-qL-wkz"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                        <color key="textColor" name="grayText"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="L6q-JV-F3e" firstAttribute="centerX" secondItem="Qyh-ZV-xQA" secondAttribute="centerX" id="Qgx-IV-fiJ"/>
+                                                    <constraint firstItem="qMt-VY-aOa" firstAttribute="top" secondItem="L6q-JV-F3e" secondAttribute="bottom" constant="10" id="St8-80-Y1E"/>
+                                                    <constraint firstAttribute="bottom" secondItem="qMt-VY-aOa" secondAttribute="bottom" constant="10" id="UTU-vf-Yxj"/>
+                                                    <constraint firstItem="qMt-VY-aOa" firstAttribute="centerX" secondItem="Qyh-ZV-xQA" secondAttribute="centerX" id="hxY-Gw-eyv"/>
+                                                    <constraint firstItem="L6q-JV-F3e" firstAttribute="top" secondItem="Qyh-ZV-xQA" secondAttribute="top" constant="10" id="mZh-OV-dIb"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DdX-nq-qAI"/>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="F1C-ca-FnV" firstAttribute="top" secondItem="0Wz-uc-NRr" secondAttribute="bottom" constant="20" id="6iN-PG-aPw"/>
+                            <constraint firstItem="pat-I0-Y8r" firstAttribute="leading" secondItem="DdX-nq-qAI" secondAttribute="leading" constant="20" id="DVZ-6f-sM1"/>
+                            <constraint firstItem="F1C-ca-FnV" firstAttribute="centerX" secondItem="lUn-Od-i8R" secondAttribute="centerX" id="POG-qj-knJ"/>
+                            <constraint firstItem="0Wz-uc-NRr" firstAttribute="leading" secondItem="DdX-nq-qAI" secondAttribute="leading" constant="20" id="Zxx-YW-Z7s"/>
+                            <constraint firstItem="DdX-nq-qAI" firstAttribute="trailing" secondItem="0Wz-uc-NRr" secondAttribute="trailing" constant="20" id="e3n-E2-PQc"/>
+                            <constraint firstItem="0Wz-uc-NRr" firstAttribute="top" secondItem="lUn-Od-i8R" secondAttribute="top" constant="20" id="m2Z-VV-1bX"/>
+                            <constraint firstItem="pat-I0-Y8r" firstAttribute="top" secondItem="F1C-ca-FnV" secondAttribute="bottom" constant="40" id="nif-Ze-4cv"/>
+                            <constraint firstItem="DdX-nq-qAI" firstAttribute="trailing" secondItem="pat-I0-Y8r" secondAttribute="trailing" constant="20" id="z00-94-VBL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IrE-mV-bQh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.6376811594203" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lable" width="143.5" height="60"/>
+        <image name="service1" width="141" height="136"/>
+        <image name="service2" width="198" height="187"/>
+        <image name="service3" width="199" height="208"/>
+        <namedColor name="background">
+            <color red="0.92900002002716064" green="0.92900002002716064" blue="0.92900002002716064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayText">
+            <color red="0.28999999165534973" green="0.28999999165534973" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
